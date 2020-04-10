@@ -2,12 +2,13 @@ Attribute VB_Name = "CarFactoryExample"
 '@Folder("VBAProject")
 Option Explicit
 
-'if this should work from this file (see comment in same module in
-''CarsProject.xlsm') then I guess a reference to the other project is missing,
-'right?
+'NOTE: Either this module was missing in this project or
+'      it was intended to be in the 'ReferencingProject.xlsm'.
+'      In the later case please mention that in the article
+'      (and continue to read comments there)
 Public Sub DoSomething()
-    Dim myCar As Car '<~ DoSomething is coupled with the Car class here
-    Set myCar = CarFactory.Create(2016, "Civic", "Honda") '<~ DoSomething is also coupled with the CarFactory class
+    Dim myCar As Car
+    Set myCar = CarFactory.Create(2016, "Civic", "Honda")
     
     MsgBox "We have a " & myCar.Make & " " & myCar.Manufacturer & " " & myCar.Model & " here."
     'these assignments are illegal here, code won't compile if they're uncommented:
@@ -15,4 +16,3 @@ Public Sub DoSomething()
     'myCar.Model = "Fit"
     
 End Sub
-

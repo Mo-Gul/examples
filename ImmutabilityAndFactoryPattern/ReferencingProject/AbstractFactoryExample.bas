@@ -2,6 +2,8 @@ Attribute VB_Name = "AbstractFactoryExample"
 '@Folder("VBAProject")
 Option Explicit
 
+'NOTE: this is also not working
+'      --> see comment in 'CarFactoryEample' module
 Public Sub DoSomething()
     ManufactureSomeCar New AbstractCarFactory
 End Sub

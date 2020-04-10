@@ -8,7 +8,7 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = True
 Attribute VB_Ext_KEY = "Rubberduck" ,"Predeclared Class Module"
-'@Folder("Examples.ReadOnlyInReferencingProject.Factory")
+'@Folder("Examples.ReadOnlyInReferencingProject")
 '@PredeclaredId
 '@Exposed
 Option Explicit

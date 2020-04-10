@@ -7,8 +7,7 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = True
-Attribute VB_Ext_KEY = "Rubberduck" ,"Predeclared Class Module"
-'@Folder("Examples.Model")
+'@Folder("Examples.ReadOnlyEverywhere")
 '@PredeclaredId
 '@Exposed
 Option Explicit

@@ -7,7 +7,7 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = True
-'@Folder("Examples.Model")
+'@Folder("Examples.ReadOnlyInReferencingProject")
 '@Exposed
 Option Explicit
 
@@ -41,4 +41,3 @@ End Property
 Friend Property Let Manufacturer(ByVal value As String)
     this.Manufacturer = value
 End Property
-

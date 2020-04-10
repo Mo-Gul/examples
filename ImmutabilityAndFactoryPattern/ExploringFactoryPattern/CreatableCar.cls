@@ -21,8 +21,11 @@ Private Type TCar
 End Type
 Private this As TCar
 
+'NOTE: mention in the article that you now call this class 'CreatableCar'
+'      and adapt the following text and code
+'      (section "Factory Method")
 Public Function Create(ByVal carMake As Long, ByVal carModel As String, ByVal carManufacturer As String) As ICar
-    Dim result As New Car
+    Dim result As New ReadOnlyCar
     result.Make = carMake
     result.Model = carModel
     result.Manufacturer = carManufacturer
@@ -64,4 +67,3 @@ End Property
 Private Property Get ICar_Model() As String
     ICar_Model = this.Model
 End Property
-

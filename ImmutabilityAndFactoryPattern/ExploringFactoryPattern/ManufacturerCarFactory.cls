@@ -38,7 +38,7 @@ Private Function ISimplerCarFactory_Create(ByVal carModel As String) As ICar
     Dim result As ReadOnlyCar
     Set result = New ReadOnlyCar
     result.Manufacturer = this.Manufacturer
-    result.Make = DateTime.Year(DateTime.Date)
+    result.Make = DateTime.Year(DateTime.Date)  '<-- the argument is missing in article
     result.Model = carModel
     Set ISimplerCarFactory_Create = result
 End Function

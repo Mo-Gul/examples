@@ -24,7 +24,7 @@ Private Function CreateSomeHondaCars(ByVal factory As ISimplerCarFactory) As Col
     cars.Add factory.Create("Civic")
     cars.Add factory.Create("Accord")
     cars.Add factory.Create("CRV")
-    Set CreateSomeCars = Collection
+    Set CreateSomeHondaCars = cars
 End Function
 
 Private Sub ListAllCars(ByVal cars As Collection)

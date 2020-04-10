@@ -7,7 +7,7 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = True
-'@Folder("Examples.Model.Abstract")
+'@Folder("Examples.ReadOnlyEverywhere")
 '@Interface
 Option Explicit
 
@@ -19,5 +19,3 @@ End Property
 
 Public Property Get Manufacturer() As String
 End Property
-
-
