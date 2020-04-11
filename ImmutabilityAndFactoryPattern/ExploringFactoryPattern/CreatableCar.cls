@@ -25,7 +25,7 @@ Private this As TCar
 '      and adapt the following text and code
 '      (section "Factory Method")
 Public Function Create(ByVal carMake As Long, ByVal carModel As String, ByVal carManufacturer As String) As ICar
-    Dim result As New ReadOnlyCar
+    Dim result As New CreatableCar
     result.Make = carMake
     result.Model = carModel
     result.Manufacturer = carManufacturer
